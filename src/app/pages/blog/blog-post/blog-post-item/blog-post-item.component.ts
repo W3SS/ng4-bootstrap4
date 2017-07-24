@@ -23,12 +23,11 @@ export class BlogPostItemComponent implements OnInit, OnDestroy {
   key: any;
   displayName = this.authUserService.diplayName;
 
-
   constructor(
     private route: ActivatedRoute,
     private blogService: BlogService,
     private authUserService: AuthUserService
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.paramsId = +this.route.snapshot.params['id'];
@@ -46,7 +45,8 @@ export class BlogPostItemComponent implements OnInit, OnDestroy {
     });
   }
 
-  onSubmit(commentLength: any) {
+  onSubmit() {
+    const commentLength = Object.keys(this.blogComment).length;
     if (commentLength === null) {
       this.key = 0
     }else {

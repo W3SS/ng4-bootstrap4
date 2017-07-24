@@ -8,7 +8,7 @@ import { AuthUserService } from '../../../auth/auth-user-service.service';
 })
 export class PageNotFoundComponent implements OnInit {
 
-  constructor(private authUserService: AuthUserService) { }
+  constructor(public authUserService: AuthUserService) { }
 
   ngOnInit() {
   }

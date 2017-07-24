@@ -21,7 +21,7 @@
   <div class="card my-4">
     <h5 class="card-header">Leave a Comment:</h5>
     <div class="card-block">
-      <form [formGroup]="commentForm" (ngSubmit)="onSubmit(blogComment?.length)">
+      <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
           <textarea formControlName="textareaComment" type="text" placeholder="Write a comment..."  class="form-control" rows="1"></textarea>
         </div>
@@ -35,7 +35,7 @@
       <mb-blog-comment
         [comment]="comment.comment"
         [id]="i"
-        [commentId]="blogComment.length - i - 1"
+        [commentId]="blogComment?.length - i - 1"
         [commentDate]="comment.date"
         [displayCommentName]="comment.user">
       </mb-blog-comment>

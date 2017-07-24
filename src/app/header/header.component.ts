@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   isShow = false;
 
-  constructor(private authService: AuthService, private router: Router, private authUserService: AuthUserService) { }
+  constructor(private authService: AuthService, private router: Router, public authUserService: AuthUserService) { }
 
   ngOnInit() {
   }
