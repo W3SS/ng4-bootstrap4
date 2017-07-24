@@ -1,0 +1,10 @@
+<!-- Image Header -->
+<img class="img-fluid rounded mb-4" src="../../../assets/images/sesrvices/services.jpg" alt="Services">
+
+<!-- Marketing Icons Section -->
+<div class="row">
+  <div class="col-lg-4 mb-4" *ngFor="let service of services">
+    <mb-service-item [service]="service"></mb-service-item>
+  </div>
+</div>
+<!-- /.row -->

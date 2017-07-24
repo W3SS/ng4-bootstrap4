@@ -1,0 +1,9 @@
+<!-- Project One -->
+<mb-one-column-portfolio-item
+  *ngFor="let portfolio of portfolios; let i = index"
+  [portfolio]="portfolio"
+  [index]="i"
+></mb-one-column-portfolio-item>
+
+<!-- Pagination -->
+<mb-pagination></mb-pagination>

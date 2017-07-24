@@ -1,0 +1,13 @@
+
+<!-- Page Heading/Breadcrumbs -->
+<h1 class="mt-4 mb-3">{{ pageActive }}
+  <small *ngIf="pageActive !== '404'; else pageNotFound">Subheading</small>
+  <ng-template #pageNotFound>
+  <small>Page Not Found</small>
+</ng-template></h1>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item" routerLinkActive="active">
+    <a routerLink="/">Home</a>
+  </li>
+  <li class="breadcrumb-item active">{{ pageUrlActive }}</li>
+</ol>

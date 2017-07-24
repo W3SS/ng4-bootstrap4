@@ -1,0 +1,17 @@
+<div class="card-block">
+  <div class="row">
+    <div class="col-lg-6">
+      <a href="#">
+        <img class="img-fluid rounded" [src]="blogPost.imageUrl" alt="{{ blogPost.title }}">
+      </a>
+    </div>
+    <div class="col-lg-6">
+      <h2 class="card-title">{{ blogPost.title }}</h2>
+      <p class="card-text">{{ blogPost.description.substring(0, 100) + '...' }}</p>
+      <a [routerLink]="['/blog-post', blogPostId]" class="btn btn-primary">Read More &rarr;</a>
+    </div>
+  </div>
+</div>
+<div class="card-footer text-muted">
+  Posted on {{ blogPost.date | date: 'longDate' }} by <a href="#">Start Bootstrap</a>
+</div>

@@ -1,0 +1,8 @@
+slide {
+  max-height: 500px;
+}
+
+img {
+  position: absolute;
+  bottom: 0;
+}

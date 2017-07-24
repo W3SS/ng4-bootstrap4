@@ -1,0 +1,20 @@
+<div class="card h-100">
+  <a *ngIf="!isRouterTrue; else routerTrue" (click)="onClickImage()" href="#imagePartNo" pageScroll [pageScrollDuration]="500" style="cursor: pointer">
+    <img
+      class="card-img-top img-fluid"
+      [src]="portfolio.imagePath"
+      alt="{{ portfolio.name }}">
+  </a>
+  <ng-template #routerTrue>
+    <a #routerTrue>
+      <img
+        class="card-img-top img-fluid"
+        [src]="portfolio.imagePath"
+        alt="{{ portfolio.name }}">
+    </a>
+  </ng-template>
+  <div class="card-block">
+    <h4 class="card-title"><a mbHighlight (click)="onNavigate()">{{ portfolio.name }}</a></h4>
+    <p class="card-text">{{ portfolio.description }}</p>
+  </div>
+</div>

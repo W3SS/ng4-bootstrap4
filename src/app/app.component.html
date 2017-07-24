@@ -1,0 +1,8 @@
+<mb-header></mb-header>
+<mb-carousel *ngIf="currentUrl === ''"></mb-carousel>
+<div class="container">
+  <mb-page-header *ngIf="currentUrl !== ''" [pageActive]="currentUrl" [pageUrlActive]="currentPageUrl"></mb-page-header>
+  <router-outlet></router-outlet>
+</div>
+  <mb-footer></mb-footer>
+

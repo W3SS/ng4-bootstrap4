@@ -1,0 +1,4 @@
+<!-- Blog Post -->
+<div class="card mb-4" *ngFor="let blogPost of blogPosts; let i = index">
+  <mb-blog-home-two-item [blogPost]="blogPost" [blogPostId]="i + 1"></mb-blog-home-two-item>
+</div>

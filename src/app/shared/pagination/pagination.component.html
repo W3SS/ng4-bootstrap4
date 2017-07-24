@@ -1,0 +1,13 @@
+<pagination
+  [ngClass]="{'justify-content-center': true}"
+  (pageChanged)="pageChanged($event)"
+  [boundaryLinks]="true"
+  itemsPerPage="4"
+  [totalItems]="totalItems"
+  [(ngModel)]="currentPage"
+  class="pagination-md"
+  previousText="&lsaquo;"
+  nextText="&rsaquo;"
+  firstText="&laquo;"
+  lastText="&raquo;">
+</pagination>
