@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../shared/guard/auth-service.service';
 import { Router } from '@angular/router';
 import { AuthUserService } from '../auth/auth-user-service.service';
 
@@ -12,7 +11,7 @@ export class HeaderComponent implements OnInit {
 
   isShow = false;
 
-  constructor(private authService: AuthService, private router: Router, public authUserService: AuthUserService) { }
+  constructor(private router: Router, public authUserService: AuthUserService) { }
 
   ngOnInit() {
   }

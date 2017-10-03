@@ -14,3 +14,8 @@ const AuthRoutes: Routes = [
 })
 
 export class AuthRoutingModule {}
+
+export const routingAuthComponents = [
+  SigninComponent,
+  SignupComponent
+];

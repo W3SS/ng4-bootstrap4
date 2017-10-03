@@ -7,6 +7,8 @@ import { FourColumnPortfolioComponent } from './four-column-portfolio/four-colum
 import { ThreeColumnPortfolioComponent } from './three-column-portfolio/three-column-portfolio.component';
 import { TwoColumnPortfolioComponent } from './two-column-portfolio/two-column-portfolio.component';
 import { OneColumnPortfolioComponent } from './one-column-portfolio/one-column-portfolio.component';
+import { PortfolioSectionComponent } from '../home/portfolio-section/portfolio-section.component';
+import { OneColumnPortfolioItemComponent } from './one-column-portfolio/one-column-portfolio-item/one-column-portfolio-item.component';
 
 const PortfolioRoutes: Routes = [
   { path: 'portfolio-1-col/page/:page', component: OneColumnPortfolioComponent },
@@ -27,3 +29,13 @@ const PortfolioRoutes: Routes = [
 })
 
 export class PortfolioRoutingModule {}
+
+export const routingPortfolioComponents = [
+  OneColumnPortfolioComponent,
+  TwoColumnPortfolioComponent,
+  ThreeColumnPortfolioComponent,
+  FourColumnPortfolioComponent,
+  SinglePortfolioItemComponent,
+  PortfolioSectionComponent,
+  OneColumnPortfolioItemComponent,
+];

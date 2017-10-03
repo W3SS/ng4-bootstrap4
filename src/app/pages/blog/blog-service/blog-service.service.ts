@@ -285,9 +285,6 @@ export class BlogService {
     return this.blogPosts
   }
 
-  getBlogPost(id: number) {
-    return this.blogPosts[id];
-  }
 
   constructor(private http: Http) {}
 
