@@ -5,6 +5,7 @@ import { Portfolio } from './portfolio-section/portfolio.model';
 import { PortfolioService } from './portfolio-section/portfolio.service';
 import { ServicesService } from '../services/services.service';
 import { Services } from '../services/services.model';
+import { BlogService } from '../blog/blog-service/blog-service.service';
 
 @Component({
   selector: 'mb-home',
@@ -21,7 +22,8 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   constructor(
     private portfolioService: PortfolioService,
-    private sericesService: ServicesService
+    private sericesService: ServicesService,
+    private blogService: BlogService
   ) {
     this.subscription = this.portfolioService.portfolioId.subscribe(
       (data: number) => {
@@ -35,6 +37,13 @@ export class HomeComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
     this.services = this.sericesService.getServices();
     this.portfolios = this.portfolioService.getPortfolios()
+  }
+
+  onClickedSave() {
+    this.blogService.storeBlogData()
+      .subscribe(
+        data => console.log(data)
+      )
   }
 
   ngOnDestroy() {

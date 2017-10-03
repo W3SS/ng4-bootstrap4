@@ -11,7 +11,7 @@ export class PortfolioService {
 
   private portfolios: Portfolio[] = [
     new Portfolio(
-      '../../../../assets/images/portfolio/portfolio1.jpg',
+      'assets/images/portfolio/portfolio1.jpg',
       'Project One',
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
       'Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, ' +
@@ -24,7 +24,7 @@ export class PortfolioService {
       ]
     ),
     new Portfolio(
-      '../../../../assets/images/portfolio/portfolio2.jpg',
+      'assets/images/portfolio/portfolio2.jpg',
       'Project Two',
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.',
       [new PortfolioDetail('Lorem Ipsum'),
@@ -36,7 +36,7 @@ export class PortfolioService {
       ]
     ),
     new Portfolio(
-      '../../../../assets/images/portfolio/portfolio3.jpg',
+      'assets/images/portfolio/portfolio3.jpg',
       'Project Three',
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, ' +
       'odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!',
@@ -46,13 +46,13 @@ export class PortfolioService {
       ]
     ),
     new Portfolio(
-      '../../../../assets/images/portfolio/portfolio4.jpg',
+      'assets/images/portfolio/portfolio4.jpg',
       'Project Four',
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.',
       []
     ),
     new Portfolio(
-      '../../../../assets/images/portfolio/portfolio5.jpg',
+      'assets/images/portfolio/portfolio5.jpg',
       'Project Five',
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.',
       [
@@ -62,7 +62,7 @@ export class PortfolioService {
       ]
     ),
     new Portfolio(
-      '../../../../assets/images/portfolio/portfolio6.png',
+      'assets/images/portfolio/portfolio6.png',
       'Project Six',
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,' +
       ' perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.',
@@ -74,7 +74,7 @@ export class PortfolioService {
       ]
     ),
     new Portfolio(
-      '../../../../assets/images/portfolio/portfolio7.jpg',
+      'assets/images/portfolio/portfolio7.jpg',
       'Project Seven',
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.',
       [
@@ -84,7 +84,7 @@ export class PortfolioService {
       ]
     ),
     new Portfolio(
-      '../../../../assets/images/portfolio/portfolio8.png',
+      'assets/images/portfolio/portfolio8.png',
       'Project Eight',
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident,' +
       ' perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.',
